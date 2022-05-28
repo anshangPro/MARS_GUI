@@ -6,4 +6,6 @@
 
 dump之前需要去settings-memory conf里把选项改成compact, text at address 0。
 
-受mars的限制，不支持同时把.data导出在0x0，需要导出时换选项。
+~~受mars的限制，不支持同时把.data导出在0x0，需要导出时换选项。~~
+
+修改data based configuration为支持.data .text同时导出为0x0000
