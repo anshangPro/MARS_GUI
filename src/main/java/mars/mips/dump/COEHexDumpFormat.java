@@ -64,7 +64,7 @@ public class COEHexDumpFormat extends AbstractDumpFormat {
 //                string.append(',');
                 out.println(string);
             }
-            for (int i = 0; i < 3073; i++) {
+            for (int i = 0; i < 3073 + 8192; i++) {
                 out.println("00000000");
             }
         }

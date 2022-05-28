@@ -48,6 +48,9 @@ public class COEDataHexDumpFormat extends AbstractDumpFormat {
             for (int i = lastAddress + Memory.WORD_LENGTH_BYTES; i < Memory.dataSegmentLimitAddress; i += Memory.WORD_LENGTH_BYTES) {
                 out.println("00000000");
             }
+            for (int i = 0; i < 12288; i++) {
+                out.println("00000000");
+            }
 
         }
 

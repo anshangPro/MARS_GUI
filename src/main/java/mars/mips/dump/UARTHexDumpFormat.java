@@ -58,7 +58,7 @@ public class UARTHexDumpFormat extends AbstractDumpFormat {
                 }
                 out.print(string);
             }
-            for (int i = 0; i < 3073; i++) {
+            for (int i = 0; i < 3073 + 8192; i++) {
                 out.print("00000000");
             }
             for (int i = 0; i < Memory.dataSegmentBaseAddress; i += Memory.WORD_LENGTH_BYTES) {
@@ -75,6 +75,9 @@ public class UARTHexDumpFormat extends AbstractDumpFormat {
                     string.insert(0, '0');
                 }
                 out.print(string);
+            }
+            for (int i = 0; i < 12288; i++) {
+                out.println("00000000");
             }
         }
 

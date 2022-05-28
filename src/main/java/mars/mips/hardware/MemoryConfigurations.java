@@ -104,7 +104,7 @@ public class MemoryConfigurations {
 
     // Compact allows 16 bit addressing, data segment starts at 0
     private static int[] dataBasedCompactConfigurationItemValues = {
-            0x00003000, // .text Base Address
+            0x00000000, // .text Base Address
             0x00000000, // Data Segment base address
             0x00001000, // .extern Base Address
             0x00001800, // Global Pointer $gp)
